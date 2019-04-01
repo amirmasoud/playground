@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Comaptible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Register Page &bull; Acme Corp.</title>
+  </head>
+
+  <body class="bg-grey-lighter h-screen font-sans">
+    <main
+      class="container max-w-xs mx-auto h-full flex flex-col justify-center items-center"
+    >
+      <div class="logo mb-8">
+        <svg
+          class="stroke-current text-blue inline-block h-12 w-12"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="8" cy="21" r="2"></circle>
+          <circle cx="20" cy="21" r="2"></circle>
+          <path
+            d="M5.67 6H23l-1.68 8.39a2 2 0 0 1-2 1.61H8.75a2 2 0 0 1-2-1.74L5.23 2.74A2 2 0 0 0 3.25 1H1"
+          ></path>
+        </svg>
+      </div>
+      <div class="w-full rounded overflow-hidden bg-white shadow-lg">
+        <div class="p-6">
+          <div class="font-bold text-xl mb-8">Register</div>
+          <form>
+            <div class="mb-4">
+              <label
+                class="block text-grey-darker text-sm font-bold mb-2"
+                for="username"
+              >
+                Username
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                placeholder="Username"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-grey-darker text-sm font-bold mb-2"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="text"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-grey-darker text-sm font-bold mb-2"
+                for="password"
+              >
+                Password
+              </label>
+              <input
+                class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                placeholder="********"
+              />
+              <p class="text-red text-xs italic">Please choose a password.</p>
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-grey-darker text-sm font-bold mb-2"
+                for="password_confirmation"
+              >
+                Password Confirmation
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                id="password_confirmation"
+                type="password"
+                placeholder="********"
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Register
+              </button>
+              <a
+                class="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker"
+                href="#"
+              >
+                Already have account?
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a
+        class="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker mt-8"
+        href="#"
+      >
+        Back to Acme Corp. Home
+      </a>
+      <p class="text-center text-grey text-xs mt-8">
+        ©2019 Acme Corp. All rights reserved.
+      </p>
+    </main>
+  </body>
+</html>
